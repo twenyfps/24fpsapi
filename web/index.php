@@ -104,14 +104,13 @@ function insertMovies($movies){
 
 echo ('<div id="main">');
     echo ('<div id="content">');
-
-$db = new sqlitedb(true);
-if($db === null){
-	echo('Error connecting DB.');
-}
-$limit = 6;
-$filters = "movie_id IN ('tt2283362','tt2527336','tt5580390','tt1389072','tt3501632','tt3411444','tt0974015','tt4765284','tt5580036','tt2543472','tt5027774','tt6684714','tt3402236','tt4555426','tt5657846','tt4465564','tt2380307','tt5052448','tt5001754','tt2404435','tt3348730','tt1396484','tt3829920','tt5013056','tt4649466','tt1034385','tt6977356','tt4686844','tt5783956','tt5721088','tt3874544','tt3890160','tt7315526','tt4630562','tt1615160','tt1431045','tt3521164','tt5886440','tt5390066','tt3896198','tt2406566','tt2345759','tt4425200','tt1790809','tt3315342','tt0451279','tt3371366','tt3606752','tt2322441','tt1959563')";
-$movies = $db -> getMovieList ( $filters , $limit);
+		$db = new sqlitedb(true);
+		if($db === null){
+			echo('Error connecting DB.');
+		}
+		$limit = 6;
+		$filters = "movie_id IN ('tt2283362','tt2527336','tt5580390','tt1389072','tt3501632','tt3411444','tt0974015','tt4765284','tt5580036','tt2543472','tt5027774','tt6684714','tt3402236','tt4555426','tt5657846','tt4465564','tt2380307','tt5052448','tt5001754','tt2404435','tt3348730','tt1396484','tt3829920','tt5013056','tt4649466','tt1034385','tt6977356','tt4686844','tt5783956','tt5721088','tt3874544','tt3890160','tt7315526','tt4630562','tt1615160','tt1431045','tt3521164','tt5886440','tt5390066','tt3896198','tt2406566','tt2345759','tt4425200','tt1790809','tt3315342','tt0451279','tt3371366','tt3606752','tt2322441','tt1959563')";
+		$movies = $db -> getMovieList ( $filters , $limit);
 		echo ('<div class="box">');
 			echo ('<div class="head">');
 				echo ('<h1>MOST POPULAR</h1>');
@@ -123,11 +122,10 @@ $movies = $db -> getMovieList ( $filters , $limit);
             insertMovies($movies);
             echo ('<div class="cl">&nbsp;</div>');
         echo ('</div>');//End box
-
-$genres = ['action','adventure','animation','biography','comedy','crime','documentary','drama','family','fantasy','history','horror','musical','mystery','news','romance','sci-fi','sport','thriller','war','western'];
-foreach($genres as $genre){
-    $filters = "genres like '%" .$genre ."%'";
-    $movies = $db -> getMovieList ( $filters , $limit);
+		$genres = ['action','adventure','animation','biography','comedy','crime','documentary','drama','family','fantasy','history','horror','musical','mystery','news','romance','sci-fi','sport','thriller','war','western'];
+	foreach($genres as $genre){
+	    $filters = "genres like '%" .$genre ."%'";
+	    $movies = $db -> getMovieList ( $filters , $limit);
         echo ('<div class="box">');
     		echo ('<div class="head">');
 				echo ('<h1>' .strtoupper($genre) .'</h1>');
@@ -139,10 +137,9 @@ foreach($genres as $genre){
             insertMovies($movies);
             echo ('<div class="cl">&nbsp;</div>');
         echo ('</div>');//End box
-}
+	}
         echo ('<div class="cl">&nbsp;</div>');
     echo ('</div>');//End content
-    
     echo ('<div class="cl">&nbsp;</div>');
 echo ('</div>');//End Main
 
@@ -151,7 +148,7 @@ echo ('</div>');//End footer
 // echo ('</div>');
 // echo ('<!-- end Shell -->');
 ?>
-	'</div>
+	</div>
     <!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
