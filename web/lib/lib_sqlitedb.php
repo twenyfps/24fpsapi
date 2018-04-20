@@ -2,7 +2,7 @@
 define ( 'DIR', dirname ( __FILE__ ) );
 class sqlitedb extends SQLite3
 {
-	var $dbfile    = '/RelaxingTime.sqlite';
+	var $dbfile    = './RelaxingTime.sqlite';
 	var $debug = false;
 	function __construct($debug)
 	{
@@ -21,7 +21,7 @@ class sqlitedb extends SQLite3
 	 *
 	 * @param Array $filters REQUEST-Suchfilter
 	 * @return Array Filme
-	 * @todo Sortierungsmöglichkeiten
+	 * @todo SortierungsmÃ¶glichkeiten
 	 */
 	function getMovieList ( $filters = null, $limit )
 	{
@@ -61,7 +61,7 @@ class sqlitedb extends SQLite3
 	}
 	
 	/**
-	 * SQLite-Wrapper für Queries mit Parametern
+	 * SQLite-Wrapper fÃ¼r Queries mit Parametern
 	 *
 	 * @param String $sql SQL-Query mit ggf. Platzhaltern
 	 * @param Array  $placeholders assoziatives Array mit Platzhaltern und deren Datentypen
