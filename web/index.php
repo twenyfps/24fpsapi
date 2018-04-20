@@ -145,9 +145,10 @@ echo ('</div>');//End Main
 
 echo ('<div id="footer">');
 echo ('</div>');//End footer
-echo ('</div>');
-echo ('<!-- end Shell -->');
+// echo ('</div>');
+// echo ('<!-- end Shell -->');
 ?>
+	'</div>
     <!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
