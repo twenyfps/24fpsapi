@@ -62,7 +62,7 @@
     <!-- end Header -->
 <?php
 require ( './lib/lib_sqlitedb.php' );
-require ( './lib/AES.php' );
+//require ( './lib/AES.php' );
 function insertMovies($movies){
     $count = sizeof($movies);
     $index = 0;
@@ -73,16 +73,16 @@ function insertMovies($movies){
         else 
         echo ('<div class="movie">');
     
-        $key = 'An061285Ph140784';
-        $aes = new AES($movie['extra'], $key, 128, null);
-        $plain = $aes->decrypt();
+//        $key = 'An061285Ph140784';
+//        $aes = new AES($movie['extra'], $key, 128, null);
+//        $plain = $aes->decrypt();
         //echo($plain);
-        $plain =preg_replace('/[\x00-\x1f]/', '', $plain);
-        $extra = json_decode($plain);
+//        $plain =preg_replace('/[\x00-\x1f]/', '', $plain);
+//        $extra = json_decode($plain);
         //echo('<br>');
         //echo($extra->yt_trailer_code);
             echo ('<div class="movie-image">');
-		        echo ('<a class="youtube-link" youtubeid="' .$extra->yt_trailer_code .'" href="#"><span class="play"></span><img src="' .$movie['cover'] .'" alt="movie" /></a>');
+		        echo ('<a class="youtube-link" youtubeid="' .'$extra->yt_trailer_code' .'" href="#"><span class="play"></span><img src="' .$movie['cover'] .'" alt="movie" /></a>');
 	        echo ('</div>');
             echo ('<span class="name">&nbsp;</span>');
             echo ('<a href="/movie.php?movie_id='.$movie['movie_id'] .'">' .$movie['title'] .'</a>');
