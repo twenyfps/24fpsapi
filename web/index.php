@@ -61,6 +61,9 @@
 		</div>
 		<!-- end Header -->
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require ('./lib/lib_sqlitedb.php');
 function insertMovies($movies) {
 	$count = sizeof ( $movies );
