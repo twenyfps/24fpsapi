@@ -2,6 +2,30 @@
 
 $sig = $_SERVER['HTTP_SIG'];
 include 'sig_checker.php';
+$sigCheck = sigCheck($sig);
+header('Content-Type: application/json');
+
+if($sigCheck == true){
+	$link = 'https://www.imdb.com/chart/moviemeter';
+	$page = file_get_contents($link);
+	$re = '/\"tt([1-9])+\"/';
+	preg_match_all($re, $page, $matches, PREG_SET_ORDER, 0);
+	$array = [];
+	foreach ($matches as $match){
+		array_push ( $array , $match[0]);
+	}
+	$array = array_unique ( $array);
+	$comma_separated = '(' . implode(",", $array) .')';
+	$comma_separated = str_replace('"', "'", $comma_separated);
+	echo($comma_separated);
+}else{
+	$errorMsg = '{ "status": "error", "status_message": "Time not match, Please check your device time settings."}';
+	echo $errorMsg;
+	exit();
+}
+/*
+$sig = $_SERVER['HTTP_SIG'];
+include 'sig_checker.php';
 include 'pt2mt.php';
 $sigCheck = sigCheck($sig);
 header('Content-Type: application/json');
@@ -115,5 +139,5 @@ if($sigCheck == true){
     $errorMsg = '{ "status": "error", "status_message": "Time not match, Please check your device time settings."}';
     echo $errorMsg;
     exit();
-}
+}*/
 ?>
