@@ -8,7 +8,7 @@ header('Content-Type: application/json');
 if($sigCheck == true){
 	$link = 'https://www.imdb.com/chart/moviemeter';
 	$page = file_get_contents($link);
-	$re = '/\"tt([1-9])+\"/';
+	$re = '/\"tt([0-9])+\"/';
 	preg_match_all($re, $page, $matches, PREG_SET_ORDER, 0);
 	$array = [];
 	foreach ($matches as $match){
