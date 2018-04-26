@@ -30,7 +30,7 @@ $re = '/tt([0-9])+/';
 preg_match_all ( $re, $page, $matches, PREG_SET_ORDER, 0 );
 $match = $matches [0] [0];
 // require ('phpQuery.php');
-echo($match);
+echo($page);
 if ($match === $imdb) {
 	// echo ('Match! ' . $match);
 	$dom = new DOMDocument ( '1.0', 'UTF-8' );
