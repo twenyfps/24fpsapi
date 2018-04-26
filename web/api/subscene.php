@@ -2,10 +2,10 @@
 error_reporting ( E_ERROR | E_PARSE );
 class Subtitle {
 	public $name;
-	public $href;
+	public $url;
 	function __construct($name, $href) {
 		$this->name = $name;
-		$this->href = $href;
+		$this->url = $href;
 	}
 }
 class Subtitles {
