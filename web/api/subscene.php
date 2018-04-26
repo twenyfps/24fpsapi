@@ -24,6 +24,7 @@ $imdb = $_GET ['imdb']; // 'tt2011311';
 $title = $_GET ['title']; // 'the-outsider-2018';
 
 $link = 'https://subscene.com/subtitles/' . $title;
+echo($link);
 $page = file_get_contents ( $link );
 $re = '/tt([0-9])+/';
 
