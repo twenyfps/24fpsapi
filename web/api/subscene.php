@@ -1,5 +1,5 @@
 <?php
-//error_reporting ( E_ERROR | E_PARSE );
+error_reporting ( E_ERROR | E_PARSE );
 class Subtitle {
 	public $name;
 	public $href;
@@ -24,11 +24,9 @@ $imdb = $_GET ['imdb']; // 'tt2011311';
 $title = $_GET ['title']; // 'the-outsider-2018';
 
 $link = 'https://subscene.com/subtitles/' . $title;
-echo('Link ' .$link);
 $page = file_get_contents ( $link );
 $re = '/tt([0-9])+/';
 
-echo('Page ' .$page);
 preg_match_all ( $re, $page, $matches, PREG_SET_ORDER, 0 );
 $match = $matches [0] [0];
 
@@ -48,7 +46,6 @@ if ($match === $imdb) {
 			if ($col->hasAttribute ( 'class' )) {
 				$col_class = trim ( $col->getAttribute ( 'class' ) );
 				if ($col_class === 'language-start') {
-					// neu truoc do da language_start thi add $subtitle va bat dau $subtitle moi
 					if ($subtitles !== null) {
 						array_push ( $all_subtitles, $subtitles );
 					}
@@ -68,7 +65,6 @@ if ($match === $imdb) {
 					
 					if ($span !== null) {
 						$name = trim ( $span->textContent, " \t\n\r\0\x0B" );
-						// $name = trim ( $a->ownerDocument->saveHTML ( $span ) );
 					}
 					$subtitles->addSubtitle ( new Subtitle ( $name, $href ) );
 				}
