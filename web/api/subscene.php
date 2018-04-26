@@ -24,14 +24,14 @@ $imdb = $_GET ['imdb']; // 'tt2011311';
 $title = $_GET ['title']; // 'the-outsider-2018';
 
 $link = 'https://subscene.com/subtitles/' . $title;
-echo($link);
+echo('Link ' .$link);
 $page = file_get_contents ( $link );
 $re = '/tt([0-9])+/';
 
+echo('Page ' .$page);
 preg_match_all ( $re, $page, $matches, PREG_SET_ORDER, 0 );
 $match = $matches [0] [0];
-// require ('phpQuery.php');
-echo($page);
+
 if ($match === $imdb) {
 	// echo ('Match! ' . $match);
 	$dom = new DOMDocument ( '1.0', 'UTF-8' );
