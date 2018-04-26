@@ -24,7 +24,13 @@ $imdb = $_GET ['imdb']; // 'tt2011311';
 $title = $_GET ['title']; // 'the-outsider-2018';
 
 $link = 'https://subscene.com/subtitles/' . $title;
-$page = file_get_contents ( $link );
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $link); 
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+$page = trim(curl_exec($ch));
+curl_close($ch);
+
+//$page = file_get_contents ( $link );
 $re = '/tt([0-9])+/';
 
 preg_match_all ( $re, $page, $matches, PREG_SET_ORDER, 0 );
