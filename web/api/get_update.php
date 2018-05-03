@@ -10,16 +10,16 @@ $result = '{
 		},
 
 	"tv":{
-		"version":"",
+		"version":"1.0.2",
 		"link":""
 		},
 
 	"tablet":{
 		"version":"",
 		"link":""
-		}
-	},
+		},
 	"genres":"action;adventure;animation;biography;comedy;crime;documentary;drama;family;fantasy;history;horror;musical;mystery;news;romance;sci-fi;sport;thriller;war;western"
+	}
 }';
 echo $result;
 ?>
