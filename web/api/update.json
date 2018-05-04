@@ -4,7 +4,27 @@
 	"data": {
 		"mobile": [
 			{
-				"abi": "x86",
+				"abi": "arm64-v8a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi-v7a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "mips",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "mips64",
 				"version": "1.0.2",
 				"link": ""
 			},
@@ -14,12 +34,7 @@
 				"link": ""
 			},
 			{
-				"abi": "arm64-v8a",
-				"version": "1.0.2",
-				"link": ""
-			},
-			{
-				"abi": "armeabi-v7a",
+				"abi": "x86",
 				"version": "1.0.2",
 				"link": ""
 			},
@@ -31,7 +46,27 @@
 		],
 		"tv": [
 			{
-				"abi": "x86",
+				"abi": "arm64-v8a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi-v7a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "mips",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "mips64",
 				"version": "1.0.2",
 				"link": ""
 			},
@@ -41,12 +76,7 @@
 				"link": ""
 			},
 			{
-				"abi": "arm64-v8a",
-				"version": "1.0.2",
-				"link": ""
-			},
-			{
-				"abi": "armeabi-v7a",
+				"abi": "x86",
 				"version": "1.0.2",
 				"link": ""
 			},
@@ -58,7 +88,27 @@
 		],
 		"tablet": [
 			{
-				"abi": "x86",
+				"abi": "arm64-v8a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi-v7a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "mips",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "mips64",
 				"version": "1.0.2",
 				"link": ""
 			},
@@ -68,12 +118,7 @@
 				"link": ""
 			},
 			{
-				"abi": "arm64-v8a",
-				"version": "1.0.2",
-				"link": ""
-			},
-			{
-				"abi": "armeabi-v7a",
+				"abi": "x86",
 				"version": "1.0.2",
 				"link": ""
 			},
