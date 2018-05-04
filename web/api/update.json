@@ -1,0 +1,88 @@
+{
+	"status": "ok",
+	"status_message": "Query was successful",
+	"data": {
+		"mobile": [
+			{
+				"abi": "x86",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "x86_64",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "arm64-v8a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi-v7a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "universal",
+				"version": "1.0.2",
+				"link": ""
+			}
+		],
+		"tv": [
+			{
+				"abi": "x86",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "x86_64",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "arm64-v8a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi-v7a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "universal",
+				"version": "1.0.2",
+				"link": ""
+			}
+		],
+		"tablet": [
+			{
+				"abi": "x86",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "x86_64",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "arm64-v8a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "armeabi-v7a",
+				"version": "1.0.2",
+				"link": ""
+			},
+			{
+				"abi": "universal",
+				"version": "1.0.2",
+				"link": ""
+			}
+		],
+		"genres": "action;adventure;animation;biography;comedy;crime;documentary;drama;family;fantasy;history;horror;musical;mystery;news;romance;sci-fi;sport;thriller;war;western"
+	}
+}
