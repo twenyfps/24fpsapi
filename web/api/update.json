@@ -48,42 +48,42 @@
 			{
 				"abi": "arm64-v8a",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxNzZf/tv-arm64-v8a-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxNzZf/tv-arm64-v8a-release.apk"
 			},
 			{
 				"abi": "armeabi",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxNzdf/tv-armeabi-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxNzdf/tv-armeabi-release.apk"
 			},
 			{
 				"abi": "armeabi-v7a",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxNzhf/tv-armeabi-v7a-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxNzhf/tv-armeabi-v7a-release.apk"
 			},
 			{
 				"abi": "mips",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxNzlf/tv-mips-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxNzlf/tv-mips-release.apk"
 			},
 			{
 				"abi": "mips64",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxODBf/tv-mips64-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxODBf/tv-mips64-release.apk"
 			},
 			{
 				"abi": "x86_64",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxODJf/tv-x86_64-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxODJf/tv-x86_64-release.apk"
 			},
 			{
 				"abi": "x86",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxODNf/tv-x86-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxODNf/tv-x86-release.apk"
 			},
 			{
 				"abi": "universal",
 				"version": "1.0.2",
-				"link": "https://od.lk/s/Ml8xNTY3MDUxODFf/tv-universal-release.apk"
+				"link": "https://od.lk/d/Ml8xNTY3MDUxODFf/tv-universal-release.apk"
 			}
 		],
 		"tablet": [
